@@ -1,0 +1,73 @@
+html, body {
+  background-color:#171717;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.footer {
+  margin-top:50px;
+  width: 100%;
+  text-align: center;
+  padding-bottom:10px;
+}
+
+.navbar{
+  padding:50px;
+}
+
+#footer {
+  background-color:#171717;
+}
+
+#nav {
+  background-color:#171717;
+}
+
+a:hover,a:active,a:link,a:visited{
+  text-decoration:none;
+  color:white;
+}
+
+
+#card {
+  animation: float 2s ease-in-out infinite;
+  background-color:#e8e8e8;
+}
+
+.column{
+  margin-top:50px;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+#navbar-img{
+  width:70px;
+  border-radius:20px;
+  animation: imgShadow 2s ease-in-out infinite;
+}
+
+@keyframes imgShadow {
+	0% {
+		filter:drop-shadow(0 0 -1rem crimson);
+	}
+	50% {
+		filter:drop-shadow(0 0 1rem crimson);
+	}
+	100% {
+		filter:drop-shadow(0 0 -1rem crimson);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
