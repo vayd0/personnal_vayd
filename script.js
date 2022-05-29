@@ -7,5 +7,7 @@ counterContainer.innerHTML = visitCount + " visites";
 
 let loader = document.getElementById("loader");
 window.addEventListener("load", function () {
-  loader.style.display = "none";
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 1500);
 });
