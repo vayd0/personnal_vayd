@@ -1,97 +1,70 @@
-html,
-body,.page{
-  background-color: #1a1b25;
+html, body {
+  background-color:#2b2a33 !important;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
-.footer {
-  margin-top: 50px;
-  width: 100%;
-  text-align: center;
-}
-
-.navbar {
-  padding: 50px;
+.navbar{
+  padding:50px;
 }
 
 #footer {
-  background-color: #1a1b25;
+  background-color:#2b2a33;
 }
 
 #nav {
-  background: transparent;
+  background-color:#2b2a33;
 }
 
-a:hover,
-a:active,
-a:link,
-a:visited {
-  text-decoration: none;
+a:hover,a:active,a:link,a:visited{
+  text-decoration:none;
   color:white;
+  margin:5px;
 }
 
-.card {
+#card, .card-header-title, .media-content p {
+  color:white !important;
+}
+
+#card {
   animation: float 2s ease-in-out infinite;
-  background-color: #e8e8e8;
+  background:#42414d;
 }
 
-.column {
-  margin-top: 50px;
-  margin-right: 40px;
-  margin-left: 40px;
+.column{
+  margin-top:50px;
+  margin-right:40px;
+  margin-left:40px;
 }
 
-#navbar-img {
-  width: 85px;
-  border-radius: 20px;
+#navbar-img{
+  width:70px;
+  border-radius:20px;
   animation: imgShadow 2s ease-in-out infinite;
 }
 
-#loader{
-  background:#1a1b25 url("https://cdn.discordapp.com/attachments/973562106991497246/980210026268475412/8f936ad64232368077df229dda1d0324.gif") no-repeat center center;
-  height:100vh;
-  width:100%;
-  position:fixed;
-  z-index:100;
-
-}
-
 @keyframes imgShadow {
-  0% {
-    filter: drop-shadow(0 0 -1.5rem #000000);
-  }
-
-  50% {
-    filter: drop-shadow(0 0 1.5rem #000000);
-  }
-
-  100% {
-    filter: drop-shadow(0 0 -1.5rem #000000);
-  }
+	0% {
+		filter:drop-shadow(0 0 -1rem rgba(0, 0, 0, 0.438));
+	}
+	50% {
+		filter:drop-shadow(0 0 1rem rgba(0, 0, 0, 0.438));
+	}
+	100% {
+		filter:drop-shadow(0 0 -1rem rgba(0, 0, 0, 0.438));
+	}
 }
 
 @keyframes float {
-  0% {
-    transform: translatey(0px);
-  }
-
-  50% {
-    transform: translatey(-15px);
-  }
-
-  100% {
-    transform: translatey(0px);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-8px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
