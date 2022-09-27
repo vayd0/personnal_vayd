@@ -1,8 +1,8 @@
-html,
-body,
-.navbar,
-.footer {
-	background-color: #2b2a33 !important;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+	background-color: #16161a !important;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 ::-webkit-scrollbar {
@@ -10,75 +10,43 @@ body,
 }
 
 .pp-image img {
+	margin:7rem auto 25px 0;
 	display: inline-block;
-	margin-right: auto;
-	padding: 15px;
-	width: 150px;
-	margin-left: auto;
-	border-radius: 30px !important;
+	border:solid 8px #202023;
+	width: 170px;
+	border-radius: 180px !important;
+}
+
+.pp-image img:hover {
+	animation: pfp-fade 0.5s ease-in forwards;
 }
 
 .pp-image {
-	animation: backgroundAnimation 2s ease-in-out infinite;
+	position:flex;
 	text-align: center;
 }
 
+#infos h1 {
+	color:rgba(245, 245, 245, 0.656);
+}
+
+#infos h3{
+	margin-top:7px;
+	color:rgba(245, 245, 245, 0.76);
+}
 
 a:hover,
 a:active,
 a:link,
 a:visited {
 	text-decoration: none;
-	color: white;
+	color: whitesmoke;
 	margin: 5px;
+	font-size: 20px;
+	
 }
 
-#card,
-.card-header-title,
-.media-content p {
-	color: white !important;
-}
-
-#card {
-	animation: float 2s ease-in-out infinite;
-	background: #42414d;
-}
-
-.column {
-	margin-top: 50px;
-	margin-right: 40px;
-	margin-left: 40px;
-}
-
-.image.is-48x48 img {
-	border-radius: 10px;
-}
-
-@keyframes backgroundAnimation {
-	0% {
-	  filter: drop-shadow(0 0 0rem #5d5c6c)
-	}
-  
-	50% {
-	  filter: drop-shadow(0 0 0.75rem #5d5c6c)
-	}
-  
-	100% {
-	  filter: drop-shadow(0 0 0rem #5d5c6c)
-	}
-  }
-  
-
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-
-	50% {
-		transform: translatey(-10px);
-	}
-
-	100% {
-		transform: translatey(0px);
-	}
+@keyframes pfp-fade {
+    0%   { -webkit-filter: grayscale(0%); }
+    100% { -webkit-filter: grayscale(100%); }
 }
