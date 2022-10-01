@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html, body {
-	background-color: #16161a !important;
+html,
+body {
+	background-color: #141413 !important;
 	font-family: 'Roboto', sans-serif !important;
 }
 
@@ -10,29 +11,26 @@ html, body {
 }
 
 .pp-image img {
-	margin:7rem auto 25px 0;
+	margin: 7rem auto 25px 0;
 	display: inline-block;
-	border:solid 8px #202023;
+	border: solid 7.5px #f8a540;
+	background-color: #f8a540;
 	width: 170px;
 	border-radius: 180px !important;
 }
 
-.pp-image img:hover {
-	animation: pfp-fade 0.5s ease-in forwards;
-}
-
 .pp-image {
-	position:flex;
+	position: flex;
 	text-align: center;
 }
 
 #infos h1 {
-	color:rgba(245, 245, 245, 0.656);
+	color: rgba(245, 245, 245, 0.656);
 }
 
-#infos h3{
-	margin-top:7px;
-	color:rgba(245, 245, 245, 0.76);
+#infos h3 {
+	margin-top: 7px;
+	color: rgba(245, 245, 245, 0.76);
 }
 
 a:hover,
@@ -40,13 +38,7 @@ a:active,
 a:link,
 a:visited {
 	text-decoration: none;
-	color: whitesmoke;
+	color: #bd8c54;
 	margin: 5px;
 	font-size: 20px;
-	
-}
-
-@keyframes pfp-fade {
-    0%   { -webkit-filter: grayscale(0%); }
-    100% { -webkit-filter: grayscale(100%); }
 }
